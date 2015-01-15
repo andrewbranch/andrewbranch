@@ -1,1 +1,10 @@
 @import '_variables.scss';
+
+html {
+  font: 300 100%/1.4 ff-tisa-web-pro;
+  visibility: hidden;
+
+  &.wf-inactive, &.wf-active {
+    visibility: visible;
+  }
+}

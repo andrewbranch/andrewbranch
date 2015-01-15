@@ -18,6 +18,8 @@ module.exports = function(environment) {
       'media-src': "'self'"
     },
 
+    contentSecurityPolicyHeader: 'Content-Security-Policy',
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

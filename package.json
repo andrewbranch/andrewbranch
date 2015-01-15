@@ -1,7 +1,7 @@
 {
   "name": "andrewbranch",
   "version": "0.0.0",
-  "description": "Small description for andrewbranch goes here",
+  "description": "Personal portfolio site for Andrew Branch",
   "private": true,
   "directories": {
     "doc": "doc",

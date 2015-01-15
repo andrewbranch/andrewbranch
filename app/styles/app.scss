@@ -1,5 +1,9 @@
 @import '_variables.scss';
 
+$tablet-size: 768px;
+$nav-width: 150px;
+$main-padding: 20px;
+
 html {
   font: 300 100%/1.4 ff-tisa-web-pro;
   visibility: hidden;
@@ -7,4 +11,51 @@ html {
   &.wf-inactive, &.wf-active {
     visibility: visible;
   }
+}
+
+body {
+  color: $octopus;
+  background-color: white;
+  height: 10000px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+nav {
+  display: none;
+  width: $nav-width;
+  margin-top: 10%;
+  position: fixed;
+
+  transition: .3s all ease-out;
+  transform: translateX(-20px);
+  opacity: 0;
+
+  &.visible {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  @media (min-width: $tablet-size) {
+      display: block;
+  }
+}
+
+main {
+  padding: $main-padding;
+
+  @media (min-width: $tablet-size) {
+    padding: $main-padding $nav-width + $main-padding;
+  }
+}
+
+header {
+  text-align: center;
 }

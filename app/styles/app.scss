@@ -15,8 +15,14 @@ html {
 
 body {
   color: $octopus;
-  background-color: white;
+  background-color: $sand;
   height: 10000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: azo-sans-web;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .container {
@@ -57,5 +63,17 @@ main {
 }
 
 header {
+  color: $coral;
+  font-size: 150%;
+  padding: 2em 0;
   text-align: center;
+
+  img {
+    width: 300px;
+  }
+
+  h2 {
+    margin-top: 2em;
+    color: $octopus;
+  }
 }

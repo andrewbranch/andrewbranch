@@ -10,7 +10,7 @@ var elements,
 function calculateSizes(view) {
   breakpointLow = Math.max(0, elements.offset().top - window.innerHeight + 50);
   breakpointHigh = elements.offset().top - 150;
-  maxTranslate = view.$().height() * (view.get('adjectives').length - 1);
+  maxTranslate = (elements.eq(1).offset().top - elements.eq(0).offset().top) * (view.get('adjectives').length - 1);
   parallaxFactor = (breakpointHigh - breakpointLow) / maxTranslate;
 }
 

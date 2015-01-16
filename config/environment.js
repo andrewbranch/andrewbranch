@@ -13,9 +13,10 @@ module.exports = function(environment) {
       'script-src': "'self' use.typekit.net",
       'font-src': "'self' data: use.typekit.net",
       'connect-src': "'self'",
-      'img-src': "'self' p.typekit.net about:",
+      'img-src': "'self' p.typekit.net www.gravatar.com about:",
       'style-src': "'self' 'unsafe-inline' use.typekit.net",
-      'media-src': "'self'"
+      'media-src': "'self'",
+      'object-src': "'self'"
     },
 
     contentSecurityPolicyHeader: 'Content-Security-Policy',

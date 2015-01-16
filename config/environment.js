@@ -39,6 +39,10 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.contentSecurityPolicy['script-src'] = ENV.contentSecurityPolicy['script-src'] + ' lab.maltewassermann.com ajax.googleapis.com';
+    ENV.contentSecurityPolicy['style-src'] = ENV.contentSecurityPolicy['style-src'] + ' lab.maltewassermann.com'
+    ENV.contentSecurityPolicy['font-src'] = ENV.contentSecurityPolicy['font-src'] + ' lab.maltewassermann.com'
+    ENV.contentSecurityPolicy['frame-src'] = "'self'";
   }
 
   if (environment === 'test') {

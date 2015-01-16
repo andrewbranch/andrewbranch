@@ -1,12 +1,16 @@
+/* global $ */
+
 import Ember from 'ember';
-var navBreakpoint = 200;
+var navBreakpoint;
 
 export default Ember.View.extend({
 
   templateName: 'index',
 
   didInsertElement: function () {
-    document.addEventListener('scroll', this.get('scrollHandler').bind(this));
+    document.addEventListener('scroll', this.get('scrollHandler').bind(this), false);
+    var header = $('header');
+    navBreakpoint = header.offset().top + header.height();
   },
 
   scrollHandler: function () {

@@ -35,5 +35,6 @@
     "ember-inject-script": "0.0.2",
     "express": "^4.8.5",
     "glob": "^4.0.5"
-  }
+  },
+  "dependencies": {}
 }

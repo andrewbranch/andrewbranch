@@ -35,6 +35,7 @@ nav {
   width: $nav-width;
   margin-top: 10%;
   position: fixed;
+  z-index: 10;
 
   transition: .3s all ease-out;
   transform: translateX(-20px);
@@ -70,10 +71,29 @@ header {
 
   img {
     width: 300px;
+    height: 365px;
   }
 
   h2 {
     margin-top: 2em;
     color: $octopus;
+  }
+
+  ul.rotator {
+    display: inline-block;
+    list-style-type: none;
+    height: 1.5em;
+    vertical-align: top;
+    margin: 0;
+    padding: 0 0.2em;
+    overflow: hidden;
+
+    font-family: quimby-mayoral;
+    text-transform: none;
+    color: $coral;
+
+    li {
+      margin-bottom: 0.1em;
+    }
   }
 }
